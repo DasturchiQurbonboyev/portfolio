@@ -1,0 +1,58 @@
+.minu__btn {
+    font-size: 30px;
+    color: var(--text-color);
+    z-index: 1001;
+    cursor: pointer;
+}
+
+
+
+ul li {
+    position: relative;
+}
+
+
+ul li a {
+    font-size: var(--p-font);
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+
+ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: var(--main-color);
+    bottom: -3px;
+    left: 0;
+    transition: ease .40s;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+
+
+
+.download-btn {
+    padding: 5px 12px;
+    display: inline-block;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-size: var(--p-font);
+    font-weight: 500;
+    transition: ease .50s;
+}
+
+.download-btn:hover {
+    transform: scale(1.1);
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
+    color: var(--bg-color);
+}
