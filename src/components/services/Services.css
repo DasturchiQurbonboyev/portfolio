@@ -48,3 +48,17 @@
     will-change: transform;
     transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05);
 }
+
+nav {
+    position: fixed;
+    transition: .3s;
+    width: 100%;
+    z-index: 1000000;
+    padding: 15px 0;
+}
+
+.stickys {
+    background: white;
+    padding: 5px 0;
+
+}

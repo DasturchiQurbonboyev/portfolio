@@ -25,7 +25,7 @@ const Navbar = () => {
         };
     }, []);
     return (
-        <nav className={` fixed w-full z-50 ${scroll ? "bg-white shadow-md" : ""}`}>
+        <nav className={`   ${scroll ? " stickys shadow" : ""}`}>
             <div className='kontainer'>
                 <div className='flex justify-between items-center py-[10px]'>
                     <div className='w-[75px]    '>
