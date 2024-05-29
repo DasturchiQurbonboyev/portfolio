@@ -1,12 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../../assets/logo-no-background.svg'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Navbar = () => {
+    let [scroll, setScroll] = useState(null)
+    console.log(scroll);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 40) {
+                setScroll(true);
+            } else {
+                setScroll(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Cleanup function to remove the event listener when the component is unmounted
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
-        <nav className=' shadow-md fixed w-full z-50 bg-white'>
+        <nav className={` fixed w-full z-50 ${scroll ? "bg-white shadow-md" : ""}`}>
             <div className='kontainer'>
                 <div className='flex justify-between items-center py-[10px]'>
                     <div className='w-[75px]    '>

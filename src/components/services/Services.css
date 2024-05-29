@@ -1,0 +1,50 @@
+.sub__servis {
+    padding: 100px 0;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.sub__box {
+    padding: 45px;
+    transition: ease .50s;
+    cursor: pointer;
+}
+
+.sub__img {
+    display: flex;
+    justify-content: center;
+}
+
+.sub__img img {
+    max-width: 100%;
+    width: 60px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.sub__box h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.sub__box p {
+    font-size: var(--p-font);
+    color: var(--secound-color);
+    line-height: 29px;
+}
+
+.sub__box:hover {
+    background: #ffffff;
+    box-shadow: 18px 0px 87px 0px rgb(10, 15, 50);
+    border-radius: 12px;
+    will-change: transform;
+    transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05);
+}
