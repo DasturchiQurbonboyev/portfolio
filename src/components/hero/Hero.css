@@ -1,5 +1,6 @@
 .hero {
-    height: calc(100vh);
+    /* heigh; */
+    padding: 20px 0;
     background-image: url(../../assets/bgImg.jpg);
     background-size: cover;
     background-position: center;
