@@ -101,7 +101,8 @@
         justify-content: start;
     }
 
-    .hero {
+    .hero__text {
+        padding-top: 50px;
         /* min-height: 130vh; */
     }
 
