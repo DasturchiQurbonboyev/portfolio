@@ -3,7 +3,7 @@ import './Services.css'
 
 const Services = () => {
     return (
-        <div className='sub__servis'>
+        <div className='sub__servis kon'>
             <div className='items'>
                 <div className='sub__box'>
                     <div className="sub__img">
@@ -27,6 +27,10 @@ const Services = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa praesentium, modi quisquam eveniet labore exercitationem nam voluptatibus sequi libero nihil consequatur est officiis odit soluta nobis mollitia voluptatem inventore? Repellat?</p>
                 </div>
             </div>
+
+
+
+
         </div>
     )
 }

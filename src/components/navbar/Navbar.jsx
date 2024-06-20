@@ -6,7 +6,6 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Navbar = () => {
     let [scroll, setScroll] = useState(null)
-    console.log(scroll);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -19,13 +18,12 @@ const Navbar = () => {
 
         window.addEventListener('scroll', handleScroll);
 
-        // Cleanup function to remove the event listener when the component is unmounted
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
     return (
-        <nav className={`   ${scroll ? " stickys shadow" : ""}`}>
+        <nav className={`navbar   ${scroll ? " stickys shadow" : ""}`}>
             <div className='kontainer'>
                 <div className='flex justify-between items-center py-[10px]'>
                     <div className='w-[75px]    '>
@@ -33,24 +31,24 @@ const Navbar = () => {
                             <img src={logo} alt="" />
                         </Link>
                     </div>
-                    <div className='block min-[670px]:hidden'>
+                    <div className='block min-[750px]:hidden'>
                         <GiHamburgerMenu className='minu__btn' />
                     </div>
-                    <ul className='max-[670px]:hidden flex justify-between items-center gap-[30px]'>
+                    <ul className=''>
                         <li>
-                            <Link to={"/"}>Home</Link>
+                            <a href='#' >Home</a>
                         </li>
                         <li>
-                            <Link to={"/about"}>About</Link>
+                            <a href='#about' >About</a>
                         </li>
                         <li>
-                            <Link>Portfolio</Link>
+                            <a href='#portfolio'>Portfolio</a>
                         </li>
                         <li>
-                            <Link>Servises</Link>
+                            <a href='#servis'>Servises</a>
                         </li>
                         <li>
-                            <Link>Contact</Link>
+                            <a href='#contact'>Contact</a>
                         </li>
                     </ul>
                     <div>
